@@ -1,0 +1,189 @@
+.block-form-question-new{
+
+  background-image: url(/wp-content/themes/bootstrap-basic/img/fon-new.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size:cover;
+
+  overflow: hidden;
+  .title{
+    padding-top: 45px;
+  }
+
+
+  .fon-grey{
+    background-image: url(/wp-content/themes/bootstrap-basic/img/gray-fon.png);
+    background-repeat: repeat;
+    background-position: 50%;
+    background-size:cover;
+    position: absolute;
+    height: 1000%;
+    width: 500%;
+    top: 0;
+    left: 0;
+
+  }
+  .container-new{
+    z-index: 999;
+
+    position: relative;
+    .one-new{
+      padding-bottom: 25px;
+    }
+    .name-block{
+      position: relative;
+      margin-bottom: 14px;
+    }
+    .name{
+      font-weight: 800;
+      font-size: 17px;
+      line-height: 1.3;
+      padding-right: 110px;
+    }
+    .date{
+      position: absolute;
+      bottom:0;
+      right: 0;
+
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    .text{
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+  }
+  .block-new{
+    padding-left: 60px;
+    .button{
+      padding: 15px 20px;
+      &:hover{
+        background: $c_orange_hover;
+      }
+    }
+    .container-button{
+      text-align: center;
+      padding-bottom: 35px;
+    }
+  }
+
+  .block-form{
+    padding-right: 60px;
+    .title{
+      color:white;
+
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .block-form-question-new{
+    .title{
+      padding-top: 30px;
+    }
+    .container-new{
+      .name{
+        font-size: 15px;
+        padding-right: 80px;
+      }
+      .date{
+        font-size:12px;
+      }
+      .text{
+        font-size: 11px;
+      }
+      .one-new{
+        padding-bottom: 20px;
+      }
+    }
+    .block-new {
+      padding-left: 40px;
+      .button {
+        padding: 12px 20px;
+      }
+    }
+    .block-form {
+      padding-right: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .block-form-question-new{
+    .container-new{
+      .name-block{
+        margin-bottom: 5px;
+      }
+      .name{
+        font-size: 13px;
+        padding-right: 60px;
+      }
+      .date{
+        font-size:10px;
+      }
+      .text{
+        font-size: 9px;
+      }
+      .one-new{
+        padding-bottom: 10px;
+      }
+    }
+    .block-new {
+      padding-left: 20px;
+      .button {
+        padding: 10px 15px;
+      }
+      .container-button{
+        padding-bottom: 25px;
+      }
+    }
+    .block-form {
+      padding-right: 20px;
+    }
+  }
+}
+@media screen and (max-width: 750px){
+  .block-form-question-new{
+    .form-questions{
+      max-width:300px;
+      width: 100%;
+      margin: auto;
+    }
+    .container-new{
+      .name-block{
+        margin-bottom: 10px;
+      }
+      .name{
+        font-size: 17px;
+        padding-right: 60px;
+      }
+      .date{
+        font-size:11px;
+      }
+      .text{
+        font-size: 12px;
+      }
+      .one-new{
+        padding-bottom: 30px;
+      }
+    }
+    .block-new {
+      padding-left: 15px;
+      .button {
+        padding: 10px 25px;
+      }
+      .container-button{
+        padding-bottom: 30px;
+      }
+    }
+    .block-form {
+      padding-right: 15px;
+    }
+    div.wpcf7 .ajax-loader{
+      display: none;
+    }
+  }
+}

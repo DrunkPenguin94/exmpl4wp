@@ -1,0 +1,186 @@
+.block-test{
+  .g-title{
+    text-transform: none;
+    padding-top: 30px;
+  }
+  min-height: 400px;
+  background: url("/wp-content/themes/bootstrap-basic/img/b-review2.png");
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: white;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  position: relative;
+
+  .block-img{
+    img {
+      max-width: 230px;
+    }
+  }
+
+  .content-test{
+    font-size: 0;
+
+  }
+  .block-img{
+    width:25%;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    height: 250px;
+    img{
+      @include  img-center;
+    }
+  }
+
+  .block-text{
+    width:50%;
+    display: inline-block;
+    vertical-align: middle;
+    .number{
+      background: $c_orange;
+      text-align: center;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      padding-top: 8px;
+      margin: auto;
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+    .line-border{
+      border-bottom: 3px solid #e6e6e6;
+      margin: auto;
+      max-width: 160px;
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    .text{
+      font-size: 18px;
+      text-align: center;
+      font-weight: 600;
+      line-height: 1.2;
+
+      margin-bottom: 35px;
+      white-space: pre-wrap;
+    }
+  }
+  .block-button{
+    width:25%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 40px;
+  }
+
+  .button-next {
+    font-size: 20px;
+    text-align: left;
+    font-weight: 800;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    background: url("/wp-content/themes/bootstrap-basic/img/checkbox.png");
+    background-repeat: no-repeat;
+    background-position-y: 13px;
+    background-position-x: 5px;
+    cursor: pointer;
+    &:hover{
+      background: url("/wp-content/themes/bootstrap-basic/img/checkboxactive.png");
+      background-repeat: no-repeat;
+      background-position-y: 10px;
+      background-position-x: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .block-test {
+    min-height: 335px;
+    .block-img{
+      height: 201px;
+    }
+    .block-text{
+      .text{
+        font-size: 16px;
+      }
+      .number{
+        font-size: 25px;
+        width: 55px;
+        height: 55px;
+        padding-top: 10px;
+        margin-bottom: 25px;
+      }
+    }
+    .button-next{
+      font-size: 16px;
+      background-size: 23px;
+      padding-left: 45px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .block-test {
+    min-height: 295px;
+    background-color: white;
+    background-image: initial;
+    .block-img{
+      height: 140px;
+    }
+    .block-text{
+      .text{
+        font-size: 13px;
+      }
+      .number{
+        font-size: 19px;
+        width: 45px;
+        height: 45px;
+        padding-top: 10px;
+        margin-bottom: 15px;
+      }
+      .line-border{
+        margin-bottom: 15px;
+      }
+    }
+    .button-next{
+      font-size: 13px;
+      background-size:17px;
+      padding-left: 35px;
+    }
+  }
+}
+@media screen and (max-width: 750px){
+  .block-test {
+    .block-text{
+      width: 100%;
+      padding: 0 10px;
+    }
+    .block-button{
+      padding-left: 0;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .block-img{
+      height: 100px;
+      text-align: center;
+      width: 100%;
+    }
+    .block-text {
+      .text {
+        font-size: 16px;
+      }
+    }
+    .button-next{
+      font-size: 16px;
+      background-size: 23px;
+      padding-left: 45px;
+    }
+  }
+}

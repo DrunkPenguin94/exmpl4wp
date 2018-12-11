@@ -1,0 +1,160 @@
+.block-reviews{
+  padding-top: 30px;
+  .container{
+
+
+  }
+  .content-reviews{
+
+    position: relative;
+  }
+  .content-reviews{
+
+    background: url("/wp-content/themes/bootstrap-basic/img/b-review.png");
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: white;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+  }
+
+  .one-review{
+    width: 233px;
+    margin: auto;
+    height: 300px;
+    box-shadow: 0 0px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 45px;
+    border: 3px solid $c_purple;
+    position: relative;
+    .logo{
+      background-image: url(/wp-content/themes/bootstrap-basic/img/hidden-logo.png);
+      position: absolute;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-position: 50%;
+      background-repeat: no-repeat;
+    }
+
+    &:hover{
+
+        .logo {
+          background-image: url(/wp-content/themes/bootstrap-basic/img/hidden-logo-hover.png);
+        }
+        .fon{
+          position: absolute;
+          z-index: 9999;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #393185;
+          opacity: 0.4;
+        }
+
+    }
+    img{
+      border-radius: 10px;
+    }
+
+  }
+  .owl-carousel{
+    .owl-nav,
+    .owl-nav.disabled{
+      display:block;
+      button{
+        width: 20px;
+        position: absolute;
+      }
+      .owl-prev{
+        left:0;
+        top:50%;
+      }
+      .owl-next{
+        right:0;
+        top:50%;
+      }
+
+    }
+    .owl-dots{
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 1700px) {
+  .block-reviews{
+    .background{
+      //background-size: 1400px auto;
+    }
+  }
+
+}
+@media screen and (max-width: 1200px) {
+  .block-reviews{
+    .one-review {
+      width: 173px;
+      height: 225px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .block-reviews{
+    .one-review {
+      width: 130px;
+      height: 168px;
+    }
+    .owl-carousel .owl-nav .owl-next,
+    .owl-carousel .owl-nav.disabled .owl-next{
+      right: 0;
+      top: 45%;
+    }
+    .owl-carousel .owl-nav .owl-prev,
+    .owl-carousel .owl-nav.disabled .owl-prev{
+      left: 0;
+      top: 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 750px){
+  .block-reviews{
+    .one-review {
+      width: 100%;
+      height: auto;
+      max-width:270px;
+    }
+    .owl-carousel .owl-nav .owl-next,
+    .owl-carousel .owl-nav .owl-next.disabled{
+      right: 3%;
+
+    }
+    .owl-carousel .owl-nav .owl-prev,
+    .owl-carousel .owl-nav .owl-prev.disabled{
+      left: 3%;
+    }
+
+  }
+}
+
+@media screen and (max-width: 400px){
+  .block-reviews{
+
+    .owl-carousel .owl-nav .owl-next,
+    .owl-carousel .owl-nav .owl-next.disabled{
+      right: 5px;
+
+    }
+    .owl-carousel .owl-nav .owl-prev,
+    .owl-carousel .owl-nav .owl-prev.disabled{
+      left: 5px;
+    }
+
+  }
+}

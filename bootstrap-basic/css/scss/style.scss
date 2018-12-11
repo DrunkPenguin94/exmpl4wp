@@ -1,0 +1,40 @@
+@import 'fonts.scss';
+@import 'mixin.scss';
+@import 'common.scss';
+@import 'head.scss';
+@import 'footer.scss';
+@import 'form.scss';
+
+//Главная
+
+@import 'main/three-block.scss';
+@import 'main/result-work.scss';
+@import 'main/map.scss';
+@import 'main/timer.scss';
+@import 'main/slaider.scss';
+@import 'main/reviews.scss';
+@import 'main/service.scss';
+@import 'main/fraud.scss';
+@import "main/news-question.scss";
+@import "main/test.scss";
+
+//Новости
+@import "content-pages/news.scss";
+
+//Отзывы
+@import "content-pages/reviews.scss";
+
+//Проекты
+@import "content-pages/projects.scss";
+
+//Услуги
+@import "content-pages/service.scss";
+
+//О нас
+@import "content-pages/about.scss";
+
+//Поиск
+@import "content-pages/search.scss";
+
+//контакты
+@import "content-pages/contact.scss";

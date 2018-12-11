@@ -1,0 +1,48 @@
+.projects-page{
+  .container-one-project{
+    vertical-align: top;
+    padding-bottom: 20px;
+
+  }
+  .row{
+
+  }
+  .block-one-container{
+    min-height: 165px;
+    position: relative;
+    img{
+      @include img-center;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .projects-page .block-one-container {
+    min-height: 131px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .projects-page .block-one-container {
+    min-height: 95px;
+  }
+}
+@media screen and (max-width: 750px){
+
+  .projects-page {
+    .block-one-container {
+      min-height: 140px;
+    }
+
+    .row {
+      text-align: center;
+    }
+
+    .container-one-project {
+      display: inline-block;
+      max-width: 150px;
+      width: 100%;
+      float: initial;
+    }
+  }
+}

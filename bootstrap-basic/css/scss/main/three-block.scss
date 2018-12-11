@@ -1,0 +1,162 @@
+.block-three-info{
+  padding: 30px 0;
+  .container-block {
+    padding: 20px 10px;
+    vertical-align: top;
+
+  }
+  .block{
+    border: 8px solid #d9dada;
+    background: white;
+    .name{
+      font-size: 17px;
+      color: rgb(16, 16, 16);
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: center;
+      padding-top: 25px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+    }
+    .text{
+      font-size: 14px;
+      font-family: "Myriad Pro";
+      color: rgb(16, 16, 16);
+      line-height: 1.2;
+
+
+    }
+    .other{
+      .data{
+        font-size: 14px;
+        font-family: "Myriad Pro";
+        color: rgb(16, 16, 16);
+        line-height: 1.2;
+      }
+
+      .line{
+        padding-bottom: 15px;
+        font-size:0;
+        .icon{
+          width:20%;
+          vertical-align: middle;
+          font-size:20px;
+          display:inline-block;
+          text-align: center;
+        }
+        .data{
+          width:80%;
+          vertical-align: middle;
+          display:inline-block;
+          padding-left:5px;
+          span{
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .other,.text{
+      min-height: 190px;
+      padding-top: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .link-block{
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 20px;
+    }
+    .button{
+      text-transform: uppercase;
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .block-three-info{
+    .block{
+      .name{
+        font-size:15px;
+        padding-top: 15px;
+      }
+      .text,.other{
+        font-size: 12px;
+        padding-top: 15px;
+        min-height: 180px;
+      }
+
+      .link-block{
+        padding-top: 10px;
+        padding-bottom: 15px;
+      }
+      .other {
+        .data {
+          font-size: 12px;
+        }
+        .line .icon{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .block-three-info{
+    .block{
+      .name{
+        font-size:13px;
+        padding-top: 10px;
+      }
+      .text,.other{
+        font-size: 10px;
+        padding-top: 10px;
+        min-height: 180px;
+      }
+
+      .link-block{
+        padding-top: 7px;
+        padding-bottom: 10px;
+      }
+      .other {
+        .data {
+          font-size: 10px;
+        }
+        .line .icon{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px){
+  .block-three-info{
+    .block{
+      .name{
+        font-size:18px;
+        padding-top: 15px;
+      }
+      .text,.other{
+        font-size: 14px;
+        padding-top: 16px;
+        min-height: auto;
+      }
+
+      .link-block{
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      .other {
+        .data {
+          font-size: 15px;
+        }
+        .line .icon{
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

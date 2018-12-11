@@ -1,0 +1,146 @@
+
+
+.contact-page{
+  #map-yandex{
+    height: 785px;
+  }
+  .info-block{
+    background: white;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding-bottom: 25px;
+    position: relative;
+    padding-left: 10%;
+    margin-bottom: 35px;
+    &:last-child{
+      margin-bottom: 0px;
+    }
+    .line-purple{
+      position: absolute;
+      bottom: 0;
+      left:0;
+      right: 0;
+      width: 100%;
+      background: $c_purple;
+      z-index: 9999;
+      height: 15px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    &>.line{
+      padding-bottom: 10px;
+      .labl{
+        font-size: 18px;
+        color: #393185;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .data{
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        br{
+          display: none;
+        }
+      }
+    }
+    .container-form{
+      .g-title{
+        text-transform: none;
+        padding-bottom: 10px;
+      }
+      .input-text,.input-big-text{
+        border:2px solid #e1e1e1;
+      }
+      .input-text::-webkit-input-placeholder,
+      .input-big-text::-webkit-input-placeholder{
+        color: #e1e1e1;
+      }
+      .input-text::-moz-placeholder,
+      .input-big-text::-moz-placeholder{
+        color: #e1e1e1;
+      }
+
+      .form-c {
+        span.wpcf7-not-valid-tip{
+          color: #f00;
+        }
+        .politik-block{
+          color:$c_purple;
+          font-weight: 600;
+          a{
+            color:$c_purple;
+            text-decoration: underline;
+          }
+        }
+        .submot-block{
+          padding-bottom: 0;
+        }
+      }
+      div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
+        border-color:#f00;
+      }
+      div.wpcf7-response-output{
+        color: #f00;
+      }
+      div.wpcf7-mail-sent-ok{
+        color:#398f14;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-page{
+    #map-yandex {
+      height: 695px;
+    }
+    .info-block {
+      margin-bottom: 20px;
+      padding-left: 6%;
+      & > .line {
+        .labl {
+          font-size: 16px;
+        }
+        .data {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact-page{
+    #map-yandex {
+      height: 555px;
+    }
+    .info-block {
+      margin-bottom: 15px;
+      padding: 15px;
+      & > .line {
+        .labl {
+          font-size: 14px;
+        }
+        .data {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px){
+  .contact-page {
+    .block-form {
+      padding-bottom: 25px;
+    }
+    div.wpcf7 .ajax-loader{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

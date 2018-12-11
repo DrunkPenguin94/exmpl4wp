@@ -1,0 +1,135 @@
+.block-fraud-main{
+  padding: 25px 0;
+  .container-fraud {
+    padding-bottom: 40px;
+  }
+  .red{
+    color:#ff3030;
+    font-weight:bold;
+  }
+  .row{
+    padding-top: 20px;
+  }
+  .block-button{
+    text-align: center;
+
+    padding-bottom: 20px;
+  }
+  .block-fraud{
+    font-size: 0;
+    .block-img{
+      display: inline-block;
+      vertical-align: top;
+      width:30%;
+      font-size: initial;
+      .bord{
+        margin: 0 20px;
+        padding-bottom: 35px;
+        border-bottom: 1px solid $c_orange;
+        text-align: center;
+      }
+    }
+    .block-text{
+      display: inline-block;
+      vertical-align: top;
+      width:70%;
+      padding-left: 15px;
+      font-size: initial;
+      .name{
+        font-weight: 800;
+        font-size: 17px;
+        line-height: 1.3;
+        height: 90px;
+      }
+      .text{
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.3;
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .block-fraud-main{
+    .block-fraud{
+      .block-img{
+        .bord{
+          margin: 0 15px;
+        }
+      }
+      .block-text{
+        .name{
+          font-size: 15px;
+          height: 80px;
+        }
+        .text{
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .block-fraud-main{
+    .block-fraud{
+      .block-img{
+        .bord{
+          margin: 0 10px;
+          padding-bottom: 25px;
+        }
+      }
+      .block-text{
+        padding-left: 10px;
+        .name{
+          font-size: 12px;
+          height: 70px;
+        }
+        .text{
+          font-size: 9px;
+        }
+      }
+    }
+    .container-fraud{
+      padding: 0 5px;
+      padding-bottom: 20px;
+    }
+  }
+}
+@media screen and (max-width: 750px){
+  .block-fraud-main{
+    .row{
+      margin: 0;
+    }
+    .block-fraud{
+      .block-img{
+        .bord{
+          margin: 0 10px;
+          padding-bottom: 25px;
+        }
+      }
+      .block-text{
+        padding-left: 10px;
+        .name{
+          font-size: 16px;
+          height: auto;
+          padding-bottom: 15px;
+        }
+        .text{
+          font-size: 13px;
+        }
+      }
+    }
+    .container-fraud{
+      padding: 0 5px;
+      padding-bottom: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px){
+
+
+}

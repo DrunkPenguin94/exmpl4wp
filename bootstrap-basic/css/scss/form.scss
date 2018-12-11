@@ -1,0 +1,171 @@
+.form-c{
+  span.wpcf7-not-valid-tip{
+    color: #fffc00;
+  }
+  .wpcf7-not-valid-tip{
+    font-size:14px;
+  }
+  .message{
+    color:white;
+    font-size:14px;
+    div{
+      margin: 0;
+    }
+  }
+  .line{
+    padding-bottom: 20px;
+  }
+  p{
+    margin: 0;
+  }
+  .input-text{
+
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    width: 100%;
+    box-shadow: 0 0px 2px rgba(256, 256, 256, 0.6);
+    border: 0;
+
+    height:45px;
+    padding-left: 20px;
+    &::-webkit-input-placeholder{
+      color: #000000;
+      font-weight: 600;
+    }
+    &::-moz-placeholder {
+      color: #000000;
+      font-weight: 600;
+    }
+  }
+
+  .input-big-text{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    width: 100%;
+    resize: none;
+    box-shadow: 0 0px 2px rgba(256, 256, 256, 0.6);
+    border: 0;
+
+    height:170px;
+    padding-left: 20px;
+    padding-top: 15px;
+    &::-webkit-input-placeholder{
+      color: #000000;
+      font-weight: 600;
+    }
+    &::-moz-placeholder {
+      color: #000000;
+      font-weight: 600;
+    }
+  }
+
+  .politik-block{
+    color: white;
+    font-size: 15px;
+
+    a{
+      color: white;
+      text-decoration: underline;
+    }
+  }
+  input[type="submit"]{
+    &:hover{
+      background: $c_orange_hover;
+    }
+  }
+  .submot-block{
+    text-align: center;
+    padding-bottom: 25px;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .form-c {
+    .wpcf7-not-valid-tip{
+      font-size:12px;
+    }
+    .message {
+      font-size: 12px;
+    }
+    .line{
+      padding-bottom: 15px;
+    }
+    .input-text {
+      font-size: 14px;
+      height: 40px;
+
+    }
+    .input-big-text{
+      font-size: 14px;
+      height:140px;
+      padding-top: 10px;
+
+    }
+    .politik-block{
+      font-size: 13px;
+
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .form-c {
+    .wpcf7-not-valid-tip{
+      font-size:10px;
+    }
+    .message {
+      font-size: 10px;
+    }
+    .line{
+      padding-bottom:15px;
+    }
+    .input-text {
+      font-size: 12px;
+      height: 30px;
+
+    }
+    .input-big-text{
+      font-size: 12px;
+      height:100px;
+      padding-top: 10px;
+
+    }
+    .politik-block{
+      font-size: 11px;
+
+    }
+  }
+}
+@media screen and (max-width: 750px){
+  .form-c {
+    .wpcf7-not-valid-tip{
+      font-size:15px;
+    }
+    .message {
+      font-size: 15px;
+    }
+    .line{
+      padding-bottom: 20px;
+    }
+    .input-text {
+      font-size: 15px;
+      height: 40px;
+
+      padding-left: 10px;
+    }
+    .input-big-text{
+      font-size: 15px;
+      height:100px;
+      padding-top: 10px;
+
+      padding-left: 10px;
+    }
+    .politik-block{
+      font-size: 13px;
+
+    }
+  }
+}

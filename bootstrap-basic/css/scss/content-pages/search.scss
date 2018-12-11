@@ -1,0 +1,62 @@
+.page-search{
+  article{
+    a{
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
+  .pagination{
+    li{
+      border:0;
+      &.active{
+        span{
+          background: transparent;
+          color:$c_orange;
+        }
+
+      }
+      span,a{
+        border:0;
+        color:$c_purple;
+        font-weight:700;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .page-search{
+    article{
+      a{
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .page-search{
+    article{
+      a{
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px){
+  .page-search{
+    article{
+      a{
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: underline;
+      }
+    }
+  }
+}
